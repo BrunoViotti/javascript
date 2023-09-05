@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobrindo se é brasileiro ou estrangeiro</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro</h1>
+    <input type="text" name="txtbr" id="txtbr">
+    <input type="button" value="Verificar" onclick="analisar()">
+    <div id="res">
+    </div>
+
+    <script>
+        function analisar() {
+        var txtb = window.document.querySelector('input#txtbr')
+        var res = window.document.querySelector ('div#res')
+        var rest = String(txtb.value)
+        if (rest == 'Brasil') {
+            res.innerHTML = 'Voce é Brasileiro'
+        } else {
+            res.innerHTML = 'Vocé é Estrangeiro'
+        }
+    }
+    </script>
+</body>
+</html>
